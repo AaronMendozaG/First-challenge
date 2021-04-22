@@ -1,15 +1,16 @@
 *{
-    padding: 0 0;
-    margin: 0 0;
-    box-sizing: content-box;
+    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body{
     font-family: 'Raleway', sans-serif;
 
 }
-
+/*-------MOBILE FONTS------------*/
 h1{
+    font-family: 'Abril Fatface', cursive;
     font-size: 32px;
     font-weight: 400;
 }
@@ -24,8 +25,44 @@ p{
     font-weight: 400;
 }
 
-button , a{
+.subtitle{
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
+    color: #858585;;
 }
 
+button, .buttonWhite , .buttonBlack{
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+ul{
+    list-style: none;
+  
+  }
+a{
+    text-decoration: none;
+    
+  }
+
+  .buttonBlack, .buttonWhite{
+    
+    display: inline-block;
+    border:1px solid black;
+    text-align: center;
+}
+
+  .buttonBlack{
+      background-color: black;
+
+      color: white;
+     
+  }
+  .buttonWhite{
+      background-color: white;
+    
+      color: black;
+     
+      
+  }
