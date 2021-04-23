@@ -1,14 +1,18 @@
 .partners{
   @include flexColumn(column,space-around, center);
   background: linear-gradient(177.96deg, #6F6F6F 1.72%, rgba(255, 255, 255, 0.43) 76.63%);
-  
+  .partners-row{
+    height: 130px;
+    flex-wrap: nowrap;
+    overflow:hidden;
+  }
   .partner-container{
     @include flexColumn(row,space-between,center);
     background-color: $colorPrimary;
     height: 103px;
     width: 288px;
     padding: 5px;
-    margin: 16px auto;
+    margin: 16px 65px;
     position: relative;
     p{
       color: $colorWhite;
@@ -67,9 +71,9 @@
 @media only screen and (min-width: 1024px){
   .partners{
     .partner-container{
-      margin: 25px
+      margin: 65px
     }
-    .partners-row1,.partners-row2,.partners-row3{
+    .partners-row{
       @include flexColumn(row,space-between,center);
       flex-wrap: nowrap;
       overflow: hidden;
