@@ -1,13 +1,11 @@
 
 .header-flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex (column,space-between,initial);
     padding: 30px 8px;
     background-color: $colorWhite;
     .header-nav{
-        display: flex;
-        justify-content: space-between;
+    @include flex (row,space-between,initial);
+        
     & a img.logo{
         height: 44px;
         width: 88px;
@@ -17,10 +15,10 @@
     }
     }
     .header-title{
-        display: flex;
+        @include flex (column,initial,center);
+       
         margin-top: 70px;
-        flex-direction: column;
-        align-items: center;
+       
 
         .subtitle, h1{
             margin-bottom: 20px;
@@ -28,8 +26,7 @@
 
     }
     .header-buttons{
-        display: flex;
-        justify-content:space-around;
+        @include flex (row,space-around,initial);
         margin-bottom: 40px;
 
         a.buttonBlack, a.buttonWhite{
@@ -40,44 +37,5 @@
             
         }
         
-    }
-}
-
-.modeloPrincipal{
-    display: flex;
-    flex-direction: column;
-    background:linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
-    position: relative;
-    align-items: center;
-    text-align: center;
-    h1{
-        font-size: 24px;
-    }
-    img{
-        width: 288px;
-        height: 263.31px;
-    }
-    video{
-        display: block;
-        width: 100%;
-        
-    }
-    div.video{
-        position: absolute;
-        top: 0;
-        z-index: -1;
-    }
-
-    .valoracion{
-        display: flex;
-    
-    & ul li{
-
-        display: inline-block;
-    & img{
-        width:16px;
-        height: 15.51px;
-    }
-    }
     }
 }
