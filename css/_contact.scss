@@ -32,6 +32,10 @@
       background-color: $colorPrimary;
       border:none;
       color: $colorWhite;
+      
+    }
+    button:hover{
+        background-color: $colorBlackHover;
     }
     input{
       background-color: rgba(0,0,0,0.65);

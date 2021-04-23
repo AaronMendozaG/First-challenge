@@ -32,6 +32,9 @@
     }
     
   }
+  .partner-container:hover{
+    background-color: $colorBlackHover;
+  }
   .partner-container.left{
     border-radius: 89px 14px 14px 89px;
     .img-container{

@@ -77,12 +77,14 @@
         }
         div.copyright{
             margin-top: 0px;
-            align-items: flex-start;
+            align-items: flex-end;
             p.copy{
+              text-align: center;
                 padding-left: 50px;
             }
             p.powered{
-                padding-left: 100px;
+              text-align: center;
+                padding-right: 100px;
             }
         }
     }
