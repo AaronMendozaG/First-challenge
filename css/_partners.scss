@@ -1,0 +1,45 @@
+.partners{
+  @include flexColumn(column,space-around, center);
+  background: linear-gradient(177.96deg, #6F6F6F 1.72%, rgba(255, 255, 255, 0.43) 98.63%);;
+  .partner-container{
+    @include flexColumn(row,space-between,center);
+    background-color: $colorPrimary;
+    height: 103px;
+    width: 288px;
+    padding: 5px;
+    margin: 16px auto;
+    position: relative;
+    p{
+      color: $colorWhite;
+      padding-right: 100px;
+      font-size: 32px;
+    }
+    .img-container{
+      border-radius: 50%;
+      border: 1px solid $colorWhite;
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 89px;
+      height: 89px;
+      position: relative;
+      text-align: center;
+      img{
+        width: 50%;
+      }
+    }
+    
+  }
+  .partner-container.left{
+    border-radius: 88.9758px 14.2361px 14.2361px 88.9758px;
+  }
+  .partner-container.right{
+    border-radius: 14.2361px 88.9758px 88.9758px 14.2361px;
+    .img-container{
+      position: absolute;
+      right: 5px;
+    }
+    p{
+      position: absolute;
+      right: 15px;
+    }
+  }
+}
