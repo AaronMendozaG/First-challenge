@@ -17,6 +17,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'Abril Fatface', cursive;
   font-size: 24px;
   font-weight: 400;
 }
@@ -179,5 +180,35 @@ a {
 .modeloPrincipal .valoracion ul li img {
   width: 16px;
   height: 15.51px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0.35))), url("../assets/img/fondo.png");
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.35) 100%), url("../assets/img/fondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin: 24px auto;
+}
+
+.contact p {
+  padding: 15px;
 }
 /*# sourceMappingURL=style.css.map */
