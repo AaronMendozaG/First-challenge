@@ -4,3 +4,10 @@
   justify-content: $justify;
   align-items: $alignI;
 }
+
+@mixin flex($direction,$justify,$alignI) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $alignI;
+}
