@@ -318,6 +318,13 @@ h3 {
   background: linear-gradient(177.96deg, #6F6F6F 1.72%, rgba(255, 255, 255, 0.43) 76.63%);
 }
 
+.partners .partners-row {
+  height: 130px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
+}
+
 .partners .partner-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,7 +343,7 @@ h3 {
   height: 103px;
   width: 288px;
   padding: 5px;
-  margin: 16px auto;
+  margin: 16px 65px;
   position: relative;
 }
 
@@ -403,9 +410,9 @@ h3 {
 /* MEDIA QUERIES */
 @media only screen and (min-width: 1024px) {
   .partners .partner-container {
-    margin: 25px;
+    margin: 65px;
   }
-  .partners .partners-row1, .partners .partners-row2, .partners .partners-row3 {
+  .partners .partners-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
