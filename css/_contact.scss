@@ -1,5 +1,5 @@
 .contact{
-  @include flexColumn;
+  @include flexColumn(column,space-around,center);
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.35) 100%),url("../assets/img/fondo.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     padding: 15px;
   }
   .form{
-    @include flexColumn;
+    @include flexColumn(column,space-around,center);
     div{
       text-align: left;
       width: 100%;
