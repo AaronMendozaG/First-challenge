@@ -1,0 +1,15 @@
+.socialFixed{
+    display: none;
+
+}
+
+
+@media screen and (min-width:1024px) {
+    .socialFixed{
+        display: unset;
+        position: fixed;
+        top: 70%;
+        left: 94%;
+    
+    }
+}

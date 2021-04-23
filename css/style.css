@@ -191,6 +191,49 @@ h3 {
   padding: 7px 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .header-flex {
+    padding: 30px 30px;
+  }
+  .header-flex .header-nav ul {
+    display: unset;
+  }
+  .header-flex .header-nav li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  .header-flex .header-nav a {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+  }
+  .header-flex .header-nav a.buttonBlack {
+    padding: 7%;
+    width: 130%;
+    height: 32px;
+    color: white;
+  }
+  .header-flex h1 {
+    font-size: 56px;
+  }
+  .header-flex .header-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-flex .header-buttons a.buttonWhite {
+    margin-left: 20px;
+  }
+  .header-flex .imgHeader {
+    width: 65%;
+    height: 65%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,7 +468,50 @@ h3 {
   }
 }
 
+div h1.titleModelo {
+  display: none;
+}
+
 .modeloPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(37.19%, rgba(0, 0, 0, 0.75)), color-stop(76.04%, rgba(0, 0, 0, 0.75)), to(#FFFFFF));
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.modeloPrincipal video {
+  display: block;
+  width: 150%;
+}
+
+.modeloPrincipal div.video {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.modeloPrincipal h2 {
+  margin-bottom: 20px;
+}
+
+.modeloPrincipal .modeloBottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,40 +525,10 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(37.19%, rgba(0, 0, 0, 0.75)), color-stop(76.04%, rgba(0, 0, 0, 0.75)), to(#FFFFFF));
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 0 27px;
+  padding: 0 30px;
 }
 
-.modeloPrincipal h1 {
-  font-size: 24px;
-  color: black;
-}
-
-.modeloPrincipal img {
-  width: 100%;
-  height: 100%;
-}
-
-.modeloPrincipal video {
-  display: block;
-  width: 160%;
-}
-
-.modeloPrincipal div.video {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
-.modeloPrincipal h2 {
-  margin-bottom: 20px;
-}
-
-.modeloPrincipal .valoracion {
+.modeloPrincipal .modeloBottom .valoracion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,27 +545,27 @@ h3 {
   margin-bottom: 10px;
 }
 
-.modeloPrincipal .valoracion p {
+.modeloPrincipal .modeloBottom .valoracion p {
   margin-right: 10px;
   font-size: 12px;
 }
 
-.modeloPrincipal .valoracion ul li {
+.modeloPrincipal .modeloBottom .valoracion ul li {
   margin-right: 5px;
   display: inline-block;
 }
 
-.modeloPrincipal .valoracion ul li img {
+.modeloPrincipal .modeloBottom .valoracion ul li img {
   width: 16px;
   height: 15.51px;
 }
 
-.modeloPrincipal .price {
+.modeloPrincipal .modeloBottom .price {
   color: white;
   margin-bottom: 15px;
 }
 
-.modeloPrincipal .buttonBlack {
+.modeloPrincipal .modeloBottom .buttonBlack {
   font-size: 14px;
   width: 80%;
   height: 30px;
@@ -517,14 +573,96 @@ h3 {
   margin-bottom: 30px;
 }
 
+.modeloPrincipal .imgModelo {
+  padding: 0 30px;
+}
+
+.modeloPrincipal .imgModelo img {
+  width: 90%;
+  height: 90%;
+}
+
+.modeloPrincipal .imgModelo h1 {
+  font-size: 24px;
+  color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  div h1.titleModelo {
+    display: block;
+    font-size: 32px;
+    text-align: center;
+  }
+  .modeloPrincipal {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 60px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(14.06%, rgba(255, 255, 255, 0.820101)), color-stop(37.19%, rgba(0, 0, 0, 0.75)), color-stop(55.32%, rgba(0, 0, 0, 0.75)), color-stop(88.52%, rgba(255, 255, 255, 0.6454)), color-stop(97.7%, #FFFFFF));
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%, rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
+    height: 130vh;
+  }
+  .modeloPrincipal video {
+    width: 100%;
+  }
+  .modeloPrincipal .modeloBottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 10px;
+    max-width: 364px;
+  }
+  .modeloPrincipal .modeloBottom h2 {
+    margin: 20px 0;
+    text-align: left;
+    font-size: 24px;
+  }
+  .modeloPrincipal .modeloBottom h1.price {
+    margin: 10px 0;
+  }
+  .modeloPrincipal .modeloBottom p {
+    margin: 10px 0;
+    text-align: left;
+  }
+  .modeloPrincipal .modeloBottom nav.category ul {
+    margin: 15px 0;
+  }
+  .modeloPrincipal .modeloBottom .buttonBlack {
+    width: 228px;
+  }
+  .modeloPrincipal .imgModelo {
+    margin-bottom: 60px;
+    padding: 0 30px;
+  }
+  .modeloPrincipal .imgModelo img {
+    width: 600px;
+    height: 480px;
+  }
+  .modeloPrincipal .imgModelo h1 {
+    display: none;
+  }
+}
+
 .productos-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -533,6 +671,10 @@ h3 {
           align-items: center;
   padding: 0 40px;
   text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: white;
+  position: relative;
   color: black;
 }
 
@@ -597,6 +739,42 @@ h3 {
   height: 36px;
   padding: 0 5px;
   padding-top: 7px;
+}
+
+.productos-flex div.verMas a {
+  width: 150%;
+}
+
+@media screen and (min-width: 1024px) {
+  .productos-flex {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 80px 0;
+  }
+  .productos-flex div.verMas {
+    position: absolute;
+    top: 100%;
+  }
+  .productos-flex div.verMas a {
+    padding-top: 5px;
+    width: 150%;
+    height: 32px;
+  }
+  .productos-flex .producto {
+    margin-left: 60px;
+  }
 }
 
 .footer {
@@ -742,6 +920,19 @@ h3 {
   .footer nav div.copyright p.powered {
     text-align: center;
     padding-right: 100px;
+  }
+}
+
+.socialFixed {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .socialFixed {
+    display: unset;
+    position: fixed;
+    top: 70%;
+    left: 94%;
   }
 }
 /*# sourceMappingURL=style.css.map */

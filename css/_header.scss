@@ -39,3 +39,53 @@
         
     }
 }
+
+@media screen and (min-width:1024px) {
+
+    .header-flex{
+        
+        padding: 30px 30px;
+        .header-nav{
+            
+            & ul {
+                display: unset;
+                
+            }
+            & li{
+                display: inline-block;
+                margin-left: 30px;
+            }
+            & a{
+                font-size: 14px;
+                font-weight: 600;
+                font-style: normal;
+                color: black;
+            }
+            a.buttonBlack{
+                padding: 7%;
+                width: 130%;
+                height: 32px;
+                color: white;
+            }
+        }
+
+        h1{
+            font-size: 56px;
+        }
+
+        .header-buttons{
+            justify-content: center;
+        
+            a.buttonWhite{
+                margin-left: 20px;
+            }
+        }
+
+        .imgHeader{
+            width: 65%;
+            height: 65%;
+            align-self: center;
+        }
+    }
+    
+}

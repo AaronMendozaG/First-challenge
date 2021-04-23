@@ -1,37 +1,33 @@
+div h1.titleModelo{
+    display: none
+}
+
 .modeloPrincipal{
-    @include flex (column,initial,center);
+    @include flex (row,initial,initial);
+    flex-wrap: wrap-reverse;
     background:linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
     position: relative;
     text-align: center;
     color: white;
-    padding: 0 27px;
     
-    h1{
-        font-size: 24px;
-        color: black;
-    }
-    img{
-        width: 100%;
-        height: 100%;
-    }
     video{
         display: block;
-        width: 160%;
-        
+        width: 150%;
     }
     div.video{
         position: absolute;
-        top: 0;
-        z-index: -1;
+        top:0px;
+        z-index:-1;
+        overflow: hidden;
     }
 
     h2{
-        
-     
         margin-bottom: 20px;
-        
     }
 
+    .modeloBottom{
+        @include flex (column,initial,center);
+        padding: 0 30px;
     .valoracion{
         @include flex (row,initial,center);
         margin-bottom: 10px;
@@ -39,9 +35,6 @@
             margin-right: 10px;
             font-size: 12px;
         }
-
-
-    
     & ul li{
         margin-right: 5px;
         display: inline-block;
@@ -50,24 +43,96 @@
         height: 15.51px;
             }
         }
-
-    
     }
 
     .price{
         color: white;
         margin-bottom: 15px;
     }
-
-    
     .buttonBlack{
         font-size: 14px;
         width: 80%;
         height: 30px;
         padding-top: 7px;
         margin-bottom: 30px;
+        }
     }
 
+    .imgModelo{
+        padding: 0 30px;
+        img{
+            width: 90%;
+            height: 90%;
+        }
+        h1{
+            font-size: 24px;
+            color: black;
+        }
+    }
+}
+
+
+
+@media screen and (min-width:1024px) {
+    div h1.titleModelo{
+        display: block;
+        font-size: 32px;
+        text-align: center
+    
+    }
+    .modeloPrincipal{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-top: 60px;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%, rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
+        height: 130vh;
+        video{
+            width: 100%;
+        }
+       .modeloBottom{
+            @include flex (column,initial,flex-start);
+            margin-top: 10px;
+            max-width: 364px;
+            
+            h2{
+                margin: 20px 0;
+                text-align: left;
+                font-size: 24px;
+            }
+
+        h1.price{
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        nav.category ul{
+            margin: 15px 0;
+
+        }
+
+        .buttonBlack{
+            width: 228px;
+        }
+
+            
+        }
+        .imgModelo{
+            margin-bottom: 60px;
+            padding: 0 30px;
+            img{
+                width: 600px;
+                height: 480px;
+            }
+            h1{
+                display: none;
+            }
+        }
+    }
 
     
+
 }
