@@ -1,6 +1,7 @@
 .partners{
   @include flexColumn(column,space-around, center);
-  background: linear-gradient(177.96deg, #6F6F6F 1.72%, rgba(255, 255, 255, 0.43) 98.63%);;
+  background: linear-gradient(177.96deg, #6F6F6F 1.72%, rgba(255, 255, 255, 0.43) 76.63%);
+  
   .partner-container{
     @include flexColumn(row,space-between,center);
     background-color: $colorPrimary;
@@ -57,4 +58,16 @@
       transform: translate(-75%,-50%);
     }
   }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1024px){
+  .partners{
+    .partners-row1,.partners-row2,.partners-row3{
+      @include flexColumn(row,space-between,center);
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+  }
+  
 }

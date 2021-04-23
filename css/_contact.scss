@@ -6,7 +6,9 @@
   background-size: cover;
   padding: 30px 15px;
   text-align: center;
-  
+  h2,p,form{
+    max-width: 560px;
+  }
   p{
     padding: 15px;
   }
@@ -42,4 +44,22 @@
       margin: 15px 0;
     }
   }
+}
+
+/* Media Queries */
+@media only screen and (min-width: 1024px){
+  .contact{
+    .form{
+      @include flexColumn(row,space-between,center);
+      padding: 0 25px;
+      flex-wrap: wrap;
+      div{
+        width: 100%;
+      }
+      div.phone-container, div.email-container{
+        width: 40%;
+      }
+    }
+  }
+  
 }
