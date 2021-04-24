@@ -70,6 +70,7 @@
 /* MEDIA QUERIES */
 @media only screen and (min-width: 1024px){
   .partners{
+    overflow: hidden;
     .partner-container{
       margin: 65px
     }
@@ -79,5 +80,4 @@
       overflow: hidden;
     }
   }
-  
 }
