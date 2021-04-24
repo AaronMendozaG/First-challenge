@@ -85,7 +85,7 @@ div h1.titleModelo{
         justify-content: space-between;
         padding-top: 60px;
         background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%, rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
-        max-height: 100vh;
+        max-height: 140vh;
         video{
             width: 100%;
         }
@@ -136,15 +136,15 @@ div h1.titleModelo{
     
 
 }
-@media screen and (min-width:1040px) {
+@media screen and (min-width:1090px) {
     .modeloPrincipal{
         flex-wrap: nowrap;
         justify-content: space-between;
         padding-top: 60px;
         background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%, rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
-        height: 110vh;
+        height: 170vh;
         video{
-            width: 100%;
+            max-width: 1448px;
         }
 
     .modeloBottom{
