@@ -498,7 +498,6 @@ h3 {
   text-align: center;
   color: white;
   height: 150vh;
-  width: 100vw;
 }
 
 .modeloPrincipal video {
@@ -538,6 +537,7 @@ h3 {
 }
 
 .modeloPrincipal .contenido .img-modelo {
+  margin-top: -100px;
   width: 288px;
   height: 263.31px;
 }
@@ -648,6 +648,7 @@ h3 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    margin-top: 10px;
     height: 100%;
     width: 100%;
   }

@@ -8,7 +8,6 @@
     
     color: white;
     height: 150vh;
-    width: 100vw;
     video{
         display: block;
         width: 100%;
@@ -32,6 +31,7 @@
     .contenido{
         @include flex (column,space-around,center);
         .img-modelo{
+            margin-top: -100px;
             width: 288px;
             height: 263.31px;
         }
@@ -94,6 +94,7 @@
             
             img.img-modelo{
                 order: 2;
+                margin-top: 10px;
                 height: 100%;
                 width: 100%;
             }
