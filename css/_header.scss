@@ -4,8 +4,8 @@
     padding: 30px 8px;
     background-color: $colorWhite;
     .header-nav{
-    @include flex (row,space-between,initial);
-        
+    @include flex (row,space-between,center);
+    padding: 0 10px;
     & a img.logo{
         height: 44px;
         width: 88px;
@@ -34,7 +34,6 @@
             height: 32px;
             font-size: 14px;
             padding: 7px 0;
-            
         }
         
     }

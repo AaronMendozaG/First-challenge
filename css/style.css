@@ -133,9 +133,10 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
 }
 
 .header-flex .header-nav a img.logo {
@@ -360,6 +361,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   background: linear-gradient(177.96deg, #6F6F6F 1.72%, rgba(255, 255, 255, 0.43) 76.63%);
+  overflow: hidden;
 }
 
 .partners .partners-row {
@@ -454,9 +456,6 @@ h3 {
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 1024px) {
-  .partners {
-    overflow: hidden;
-  }
   .partners .partner-container {
     margin: 65px;
   }
