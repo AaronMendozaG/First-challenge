@@ -496,7 +496,6 @@ h3 {
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
   position: relative;
   text-align: center;
-  padding: 30px 20px;
   color: white;
   height: 150vh;
   width: 100vw;
@@ -992,7 +991,7 @@ h3 {
     display: unset;
     position: fixed;
     top: 70%;
-    left: 85%;
+    left: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */
